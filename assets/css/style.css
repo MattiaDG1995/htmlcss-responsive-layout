@@ -171,6 +171,7 @@ nav{
     padding: 5%;
     margin-top: 5%;
     color: white;
+    margin-bottom: 5%;
 }
 
 .testim-img{
@@ -196,7 +197,47 @@ nav{
     margin-bottom: 5%;
 }
 
+.sect3{
+    background-color: blueviolet;
+    color: white;
+}
 
+.sect3 > h2{
+    text-align: center;
+    padding-top: 10%;
+    font-size: 2rem;
+}
+
+.cont-benef{
+    margin-inline: auto;
+    width: 90%;
+}
+
+.box-card{
+    
+    background-color: white;
+    color: blueviolet;
+    border-radius: 20px;
+    padding: 5%;
+    margin-top: 10%;
+    margin:5px;
+}
+
+.box-card  h3, p, button{
+    margin-top: 5%;
+}
+
+.box-card h2, h3{
+    font-size: 1.5rem;
+}
+
+.box-card button{
+    background-color: blueviolet;
+    color: white;
+    padding: 3% 10%;
+    border-radius: 20px;
+    border: none;
+}
 
 
 /*tablet*/
@@ -242,9 +283,20 @@ nav{
     }
 
     .testim-text{
-        flex-basis: 70%;
-        
+        flex-basis: 70%;      
     }
+
+    .cont-benef{
+        display: flex;
+        flex-wrap: wrap;
+              
+    }
+
+    .box-card{
+        flex-basis: calc((100% / 2) - 10px);
+    }
+    
+
 }
 
 /*Desktop*/
@@ -293,5 +345,15 @@ nav{
         position: relative;
         bottom: -170px;
         flex-basis: 40%;
+    }
+
+    .cont-benef{
+        display: flex;
+        flex-wrap: wrap;
+              
+    }
+
+    .box-card{
+        flex-basis: calc((100% / 3) - 10px);
     }
 }
