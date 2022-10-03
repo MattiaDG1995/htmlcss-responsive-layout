@@ -46,15 +46,19 @@ header{
 nav{
     margin: auto;
     width: 90%;
+    margin-bottom: 5%;
 }
 
+.container{
+    margin: auto;
+    width: 90%;
+    margin-bottom: 10%;
+}
 
 .card{
     background-color: aqua;
-    margin: auto;
-    width: 90%;
-    padding: 6% 6% 0% 6%;
-    margin-top: 10%;
+    padding: 5% 5% 0 5%;
+    margin-top: 5%;
     border-radius: 20px;
 }
 
@@ -74,7 +78,7 @@ nav{
 }
 
 .lorem{
-    line-height: 30px;
+    line-height: 20px;
     font-weight: bold;
 }
 
@@ -88,8 +92,52 @@ nav{
 }
 
 .icona{
-    font-size: 8rem;
+    font-size: 6rem;
     color: blue;
+    margin-bottom: 10%;
+}
+
+section{
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+}
+
+.cont-pl{
+    margin: auto;
+    width: 90%;
+}
+
+.planning{
+    margin-top: 10%;
+    padding: 5%;
+}
+
+.planning img{
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.pl-1 h2{
+    font-size: 3rem;
+}
+
+.planning h2{
+    margin-bottom: 10%;
+}
+
+.pl-2{
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+}
+
+.freccia{
+    background-color: blueviolet;
+    border-radius: 50%;
+    padding: 3%;
+    margin-top: 10%;
     margin-bottom: 10%;
 }
 
@@ -105,7 +153,20 @@ nav{
 }
 
 @media screen and ( min-width: 768px ){
+    .prima{
+        flex-basis: 69%;
+    }
+
+    .seconda{
+        flex-basis: 30%;
+    }
     
+
+    .container{
+        margin: auto;
+        width: 90%;     
+        justify-content: space-between;
+    }
 }
 
 /*Desktop*/
@@ -123,8 +184,36 @@ nav{
         width: 70%;
     }
 
-    /*.hamburger span{
-        display: block;
+
+    .prima{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        
+    }
+    
+    .second{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    
+    .cont-pl{
+        display: flex;
         justify-content: space-between;
-    }*/
+        margin: auto;
+        width: 70%;
+    }
+
+    .pl-1{
+        flex-basis: 60%;
+    }
+
+    .pl-2{
+        width: 70%;
+        height: 60%;
+        position: relative;
+        bottom: -170px;
+        flex-basis: 40%;
+    }
 }
