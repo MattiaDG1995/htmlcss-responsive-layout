@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.around{
+    justify-content: space-around;
+}
+
+.align{
+    align-items: center;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+    
+
+header{
+    background-color: lightskyblue;
+    color: white;
+}
+
+.hamburger span{
+    display: none;
+    margin-left: 10px;
+}
+
+.bot-nav{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+nav{
+    margin: auto;
+    width: 90%;
+}
+
+
+.card{
+    background-color: aqua;
+    margin: auto;
+    width: 90%;
+    padding: 6% 6% 0% 6%;
+    margin-top: 10%;
+    border-radius: 20px;
+}
+
+.second img{
+    width: 100%;
+    margin-top: 10%;
+}
+
+.first h1{
+    color: blue;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.first{
+    text-align: center;
+}
+
+.lorem{
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.bottone{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    margin-top: 10%;
+    padding: 3%;
+}
+
+.icona{
+    font-size: 8rem;
+    color: blue;
+    margin-bottom: 10%;
+}
+
+/*tablet*/
+@media screen and ( min-width: 425px ){
+    /*.hamburger span{
+        display: none;
+    }*/
+
+    /*.fa-bars{
+        display: block;
+    }*/
+}
+
+@media screen and ( min-width: 768px ){
+    
+}
+
+/*Desktop*/
+@media screen and ( min-width: 1024px ){
+    .fa-bars{
+        display: none;
+    }
+
+    .hamburger span{
+        display: inline-block;
+    }
+
+    nav{
+        margin: auto;
+        width: 70%;
+    }
+
+    /*.hamburger span{
+        display: block;
+        justify-content: space-between;
+    }*/
+}
